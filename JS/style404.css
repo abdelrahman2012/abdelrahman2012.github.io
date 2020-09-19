@@ -1,18 +1,28 @@
 body {
-    font-size: 20.1pt;   
-    font-family: Helvetica;
-    background-color: yellowgreen;
-    color: white;
-    size: 80;
-     }#FFFFFFFFFFFF
+   margin: 0;
+   padding: 0;
+   font-family: "montserrat",sans-serif;
+   min-height: 100vh;
+   background-image: linear-gradient(125deg,blue,#FFFFF);
+}
 
-    * {
-      box-sizing: border-box;
-    }
-  
-  
-  
-  /* Style the body */
+h1{
+   font-size: 80px;
+   text-transform: uppercase;
+   font-weight: 900;
+   letter-spacing: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   margin: 0;
+   background: url(Logo-Web.png);
+   background-size: cover;
+   -webkit-text-fill-color:transparent;
+   -webkit-background-clip:text;
+}
+
+/* Style the body */
     body {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
@@ -34,7 +44,7 @@ body {
     /* Style the top navigation bar */
     .navbar {
       overflow: hidden;
-      background-color: yellowgreen;
+      background-image: linear-gradient(125deg,#6a89cc,#b8e994);
       
     }
   
@@ -56,7 +66,7 @@ body {
   
     /* Change color on hover */
     .navbar a:hover {
-      background-color: yellowgreen;
+      background-image: linear-gradient(125deg,#6a89cc,#b8e994);
       color: white;
       
     }
@@ -121,7 +131,7 @@ body {
  
 .navbar {
   overflow: hidden;
-  background-color: yellowgreen;
+  background-image: linear-gradient(125deg,#6a89cc,#b8e994);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -158,7 +168,7 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: yellowgreen;
+  background-image: linear-gradient(125deg,#6a89cc,#b8e994);
   display: block;
 }
 
@@ -181,7 +191,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: yellowgreen;
+  background-image: linear-gradient(125deg,#6a89cc,#b8e994);
 }
 
 .dropdown:hover .dropdown-content {
@@ -234,7 +244,7 @@ body {
 }
 
 .button {
-  background-color: yellowgreen;
+  background-image: linear-gradient(125deg,#6a89cc,#b8e994);
   border: none;
   font-family: Helvetica;
   color: white;
@@ -263,7 +273,7 @@ body {
 }
 
 .button:hover {
-  background-color: yellowgreen;
+  background-color: #f1f1f1;
 }
 /* Easteregg is like sceret text color  */
 .buttoneggseaster {
@@ -362,21 +372,5 @@ body {
 }
 
 .cupcake {
-  direction: left;
-}
-
-h1{
-   font-size: 30px;
-   text-transform: uppercase;
-   font-weight: 900;
-   letter-spacing: 20px;
-   position: absolute;
-   top: 5%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   margin: 0;
-   background: url(Logo-Web.png);
-   background-size: cover;
-   -webkit-text-fill-color:transparent;
-   -webkit-background-clip:text;
+  Color: linear-gradient(125deg,#6a89cc,#b8e994);
 }
