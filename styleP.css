@@ -1,8 +1,8 @@
 body {
-    font-size: 20.1px;   
-    font-family: Permanent Marker;
-    background-color: yellowgreen;
-    color: white;
+    font-size: 20.1pt;   
+    font-family: Helvetica;
+    background-image: url(8.jpg);
+    color: blue;
     size: 80;
      }#FFFFFFFFFFFF
 
@@ -33,18 +33,12 @@ body {
     /* Style the top navigation bar */
     .navbar {
       overflow: hidden;
-      background-color: yellowgreen;
-      padding: 5%;
-      width: auto;
-      height: auto;
-      font-size: 23px;
-      border-radius: 35px;
-      text-align: center;
+      background-color: none;
       
     }
   
     /* Style the navigation bar links */
-    .navbar, a {
+    .navbar a {
       float: none;
       display: block;
       color: white;
@@ -61,14 +55,15 @@ body {
   
     /* Change color on hover */
     .navbar a:hover {
-      background-color: red;
+      background-color: none;
       color: white;
+      
     }
   
     /* Column container */
     .row {
       display: -ms-flexbox;
-      text-align: center;
+      /* IE10 */
       display: flex;
       -ms-flex-wrap: wrap;
       /* IE10 */
@@ -116,7 +111,7 @@ body {
     }
   
     /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-    @media screen and (max-width: 40px) {
+    @media screen and (max-width: 400px) {
       .navbar a {
         float: none;
         width: 100%;
@@ -241,7 +236,6 @@ button {
   background-color: yellowgreen;
   border: none;
   font-family: Helvetica;
-  font-size: 15px;
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -256,7 +250,7 @@ button {
   background-color: yellowgreen;
 }
 /* Easteregg is like sceret text color  */
-.button2 {
+.buttoneggseaster {
   color: yellowgreen;
   background-color: yellowgreen; 
   outline-color: yellowgreen;

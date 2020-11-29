@@ -2,48 +2,88 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
+     <meta name="description" content="Voor kinderen. Gemaakt door Abdelrahman (8 jaar)">
   <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/js" href="Ring.js">
+  <link rel="stylesheet" type="text/js" href="Ring.js">
   <link rel="stylesheet" type="text/html" href="Floralaan_Profile_A.html">
   <link rel="stylesheet" type="text/html" href="Floralaan_School.html">
   <link rel="stylesheet" type="text/html" href="Info.html">
   <link rel="stylesheet" type="text/html" href="News.html">
   <link rel="stylesheet" type="text/html" href="Taal.html">
-<link rel="icon" type="image/x-icon" href="Logo-Web.png">
+  <link rel="stylesheet" type="text/html" href="Abdelrahman.html">
+  <link rel="stylesheet" type="text/html" href="Login-page.html">
+  <link rel="stylesheet" type="text/html" href="Games/Clicker/index.html">
+  <link rel="icon" type="image/x-icon" href="Images/Logo-Web.png">
 </head>
 <title>Abdelrahman - Web</title>
 <body>
   <center>
   <div class="navbar">
-  
+    
     <a href="https://abdelrahman2012.github.io/floralaan.html">Thuis</a>
     <a href="https://abdelrahman2012.github.io/Floralaan_School.html">School</a>
     <a href="https://abdelrahman2012.github.io/Floralaan_Proflie_A.html">Profile</a>
+    <a onclick="myFunction()">Nacht</a>
     
+      <a href="https://abdelrahman2012.github.io/Login-page.html">Login</a>
+
     <div class="dropdown">
-    <button class="dropbtn">Meer
-    </button>
+    <div class="right">
+    <a class="dropbtn" >Meer
+    </a>
     <div class="dropdown-content">
       <a href="https://www.facebook.com/AbdelrahmanElkady2012/">Abdelrahman Profile bekijken</a>
-      <a href="https://www.hole-io.com/">Spelen</a>
       <a href="https://www.logopedie-eindhoven.nl/">Logopedie</a>
       <a href="https://abdelrahman2012.github.io/Info.html">Info</a>
       <a href="https://abdelrahman2012.github.io/News.html">News</a>
       <a href="https://abdelrahman2012.github.io/Taal.html">Taal</a>
+      <a onclick="location.href = 'https://abdelrahman2012.github.io/Games/Clicker/index.html'" >Clicker (Spel)</a>
     </div>
+    </div>
+    
   </div>
 </div>
  <h1></h1>
 </head>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<!-- Style looks the web nice. and easy to use-->
+<style>
+body {
+ font-family: 'Arial'; 
+ 
+}
+
+
+.math {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  padding: 5%;
+  width: 90%;
+  height: auto;
+  font-size: 23px;
+  border-radius: 35px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+</style>
 <body>
+<p id="num"></p>
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-      <img src="Fhoto2.jpg" alt="" style="width:300px;height:290px">
+       
+      <img src="Images/Fhoto2.jpg" alt="" style="width:300px;height:290px">
     </div>
     <div class="flip-box-back">
       <h2>Ik ben Abdelrahman</h2>
       <p>En ik heb deze Website gemaakt zonder hulp maar een beetje hulp😁</p>
+
     </div>
   </div>
 </div>
@@ -51,9 +91,8 @@
       <font color="White" face="Verdana, Geneva, sans-serif" size="+100">Welkom</font>
   </p>
   <p>
-    <h1>Floralaan Salto</h1>
   </p>
-  </center>
+
 </head>
 <body>
 
@@ -62,82 +101,61 @@
 <button class="button" onclick="location.href = 'https://www.bs-floralaan.nl/'">Naar de Floralaan Website</button>
 <button class="button" onclick="location.href = 'https://www.zwijsen.nl/lesmethoden/taal-beeld-spelling-beeld'">Naar taal in bleed</button>
 <button class="button" onclick="https://www.google.nl/maps/place/Bs+Floralaan/@51.4161931,5.4897548,19.36z/data=!4m5!3m4!1s0x47c6d84fbc1754d3:0xa92cd6bd3750ea69!8m2!3d51.4164891!4d5.4904872">Floralaan Plaats</button>
-    </center>
-  <center>
-    <p>Zo gaan we met de les <strong>(Taal in beeld)</strong></p>
-  </center>
-  <center>Les 1 <strong>Taal in beeld</strong></center>
-  <center>
-    <p>Goed de volgende dat we gaan doen is <strong>(Rekenen)</strong></p>
-  </center>
-  <center>Les 2 <strong>Rekenen</strong></center>
-  <center>
-    <h1>Rekenen Vraagen ben je er klaar voor?</h1>
-  </center>
-  <center>
-       <p id="demo">6+7= </p>
-          
-      <button type="button" class="button" onclick='document.getElementById("demo").innerHTML = "6+7= 13"'>Het Antword</button>
+
+
   
-      <p id="demo1">7+6= </p>
+    <p>Goed de volgende dat we gaan doen is <strong>(Rekenen)</strong></p>
+  <p>Les 2 <strong>Rekenen</strong></p>
+
+  <div class="math">
+  <h5>Hoe zie je het antword? je clicked gewoon op de som</h5>
+       <p id="demo" onclick='document.getElementById("demo").innerHTML = "6+7= 13"'>6+7= </p>
+         <!-- What is document.getElementById(NameElement).innerHTML = 'Thanks for clicking me'  if you clicked the button turns the message in the 'slinge kotes' -->
+      <p id="demo1" onclick='document.getElementById("demo1").innerHTML = "7+6= 13"'>7+6= </p>
       
-      <button type="button" class="button" onclick='document.getElementById("demo1").innerHTML = "7+6= 13"'>Het Antword</button>
-      <p id="demo2">60+7=</p>
+      <p id="demo2" onclick='document.getElementById("demo2").innerHTML = "60+7= 67"'>60+7=</p>
 
-      <button type="button" class="button" onclick='document.getElementById("demo2").innerHTML = "60+7= 67"'>Het Antword</button>
-      <p id="demo3">9-8=</p>
+      <p id="demo3" onclick='document.getElementById("demo3").innerHTML = "9-8= 1"'>9-8=</p>
 
-      <button type="button" class="button" onclick='document.getElementById("demo3").innerHTML = "9-8= 1"'>Het Antword</button>
-      <p id="demo4">7-5=</p>
+      <p id="demo4" onclick='document.getElementById("demo4").innerHTML = "7-5= 2"'>7-5=</p>
 
-      <button type="button" class="button" onclick='document.getElementById("demo4").innerHTML = "7-5= 2"'>Het Antword</button>
-      <p id="demo5">78-8=</p>
+      <p id="demo5" onclick='document.getElementById("demo5").innerHTML = "78-8= 70"'>78-8=</p>
 
-      <button type="button" class="button" onclick='document.getElementById("demo5").innerHTML = "78-8= 70"'>Het Antword</button>
-      <p id="demo6">9-3= </p>
+      <p id="demo6" onclick='document.getElementById("demo6").innerHTML = "9-3= 6"'>9-3= </p>
 
-      <button type="button" class="button" onclick='document.getElementById("demo6").innerHTML = "9-3= 6"'>Het Antword</button>
-      <p id="demo7">20-3= </p>
+      <p id="demo7" onclick='document.getElementById("demo7").innerHTML = "20-3= 17"'>20-3= </p>
 
-      <button type="button" class="button" onclick='document.getElementById("demo7").innerHTML = "20-3= 17"'>Het Antword</button>
-      <p id="demo8">BOUNS 30+54=</p>
+      <p id="demo8" onclick='document.getElementById("demo8").innerHTML = "BOUNS 30+54= 84"'>BOUNS 30+54=</p>
 
-      <button type="button" class="button" onclick='document.getElementById("demo8").innerHTML = "BOUNS 30+54= 84"'>Het Antword</button>
-      <p id="demo9">10+101=</p>
+      <p id="demo9" onclick='document.getElementById("demo9").innerHTML = "10+101= 121"'>10+101=</p>
 
-      <button type="button" class="button" onclick='document.getElementById("demo9").innerHTML = "10+101= 121"'>Het Antword</button>
-      <p id="demo10">BOUNS 3x3=</p>
+      <p id="demo10" onclick='document.getElementById("demo10").innerHTML = "BOUNS 3x3= 9"'>BOUNS 3x3=</p>
 
-      <button type="button" class="button" onclick='document.getElementById("demo10").innerHTML = "BOUNS 3x3= 9"'>Het Antword</button>
-      <p id="demo11">10+50=</p>
+      <p id="demo11" onclick='document.getElementById("demo11").innerHTML = "10+50= 60"'>10+50=</p>
 
-      <button type="button" class="button"onclick='document.getElementById("demo11").innerHTML = "10+50= 60"'>Het Antword</button>
-      <p id="demo12">BOUNS 90+29=</p>
+      <p id="demo12" onclick='document.getElementById("demo12").innerHTML = "BOUNS 90+29= 119"'>BOUNS 90+29=</p>
 
-      <button type="button" class="button"onclick='document.getElementById("demo12").innerHTML = "BOUNS 90+29= 119"'>Het Antword</button>
- 
+      
      <h4>Nu Gaan we begenen met Keer/Tafel sommen</h4>  
      
-     <p id="KeerSom">8x7= </p>
-
-     <button type="button" class="button" onclick='document.getElementById("KeerSom").innerHTML = "8x7= 56"'>Het Antword</button>
+     <p id="KeerSom" onclick='document.getElementById("KeerSom").innerHTML = "8x7= 56"'>8x7= </p>
      
-     <p id="KeerSom2">10x4= </p>
+     <p id="KeerSom2" onclick='document.getElementById("KeerSom2").innerHTML = "10x4= 40"'>10x4= </p>
 
-     <button type="button" class="button" onclick='document.getElementById("KeerSom2").innerHTML = "10x4= 40"'>Het Antword</button>
- 
- 
- <h1><strong>Goed gedaan</strong></h1>
-      <h1><strong>Pauze 20 minuten</strong></h1>
+     <p id="KeerSom3" onclick='document.getElementById("KeerSom3").innerHTML = "1x4= 4"'>1x4= </p>
+
+     <p id="KeerSom4" onclick='document.getElementById("KeerSom4").innerHTML = "4x4= 16"'>4x4= </p>
+     
+     <p id="KeerSom5" onclick='document.getElementById("KeerSom5").innerHTML = "1x7= 7"'>1x7= </p>
+ </div>
+
+      
     </p>
     <p><strong>de volgende dat we is kleuren</strong></p>
-<h3>Wat te maaken Auto Vliegtuig reisen wereld</h3>
+<h3>Wat gaan we kleuren? Sinterklaas en Piet!</h3>
 <!-- Links Don't Copy-->
-<button type="buttoneggeaster" onclick="https://abdelrahman.github.io/Hmm_Van-Abdelrahman.html"></button>
-<button class="button2" onclick="location.href = 'https://www.google.com/search?q=Auto+cartoon&tbm=isch&chips=q:auto+cartoon,g_1:transparent:y4MgExesTYg%3D&rlz=1CAEYPX_enNL876&hl=en&sa=X&ved=2ahUKEwiR_N3L_JfrAhWVD-wKHRd6CTYQ4lYoAHoECAEQFA&biw=2024&bih=1043&safe=active&ssui=on'">Auto</button>
-<button class="button2" onclick="location.href = 'https://www.google.com/search?q=vliegtuig+cartoon+draw&tbm=isch&ved=2ahUKEwiv19mO_ZfrAhXCs6QKHRQNA2IQ2-cCegQIABAA&oq=vliegtuig+cartoon+draw&gs_lcp=CgNpbWcQAzoECAAQEzoGCAAQHhATOggIABAFEB4QEzoICAAQCBAeEBNQzElY6FJg7FVoAHAAeACAAViIAZUDkgEBNZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=thY1X6-kL8LnkgWUmoyQBg&bih=1042&biw=2023&rlz=1CAEYPX_enNL876&safe=active&ssui=on'">Vliegtuig</button>
-<button class="button2" onclick="location.href = 'https://www.google.com/search?q=reizen+&tbm=isch&ved=2ahUKEwjtv6HI_ZfrAhWUIMUKHfVEARoQ2-cCegQIABAA&oq=reizen+&gs_lcp=CgNpbWcQAzIECCMQJzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIAFD1jAFY9YwBYMCPAWgAcAB4AIABU4gBU5IBATGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=Lxc1X63sHZTBlAb1iYXQAQ&bih=1043&biw=2024&rlz=1CAEYPX_enNL876&hl=en&safe=active&ssui=on#imgrc=fLXQRy3unUsdVM'">Reizen</button>
-<button class="button2" onclick="location.href = 'https://www.google.com/search?q=wereld&tbm=isch&ved=2ahUKEwiAyOnt_ZfrAhUZlKQKHZQjDIIQ2-cCegQIABAA&oq=wereld&gs_lcp=CgNpbWcQAzIECCMQJzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoHCCMQ6gIQJzoHCAAQsQMQQzoFCAAQsQNQlQpY8RtgvyNoAnAAeAGAAfADiAHRCJIBBzQuMi40LTGYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=fhc1X4CREJmokgWUx7CQCA&bih=1042&biw=2023&rlz=1CAEYPX_enNL876&safe=active&ssui=on#imgrc=LwJNnQPqpWfFEM'">Wereld</button>
+<button class="button2" onclick="location.href = 'chrome://dino"></button>
+<button class="button" style="font-size:19;" onclick="location.href = 'https://www.leukvoorkids.nl/kleurplaten/sinterklaas-kleurplaten/'">Alle Sinterklaas en Pieten en nog veel meer (We hebeen wel 98 kleurplaten)</button>
 
 <p id="demoPiant">Is het klaar</p>
 
@@ -147,6 +165,7 @@
 
 
 </center>
+
 </body>
 
 </html>

@@ -1,0 +1,160 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/js" href="Ring.js">
+  <link rel="stylesheet" type="text/html" href="Floralaan_Profile_A.html">
+  <link rel="stylesheet" type="text/html" href="floralaan.html">
+  <link rel="stylesheet" type="text/html" href="Floralaan_School.html">
+  <link rel="stylesheet" type="text/html" href="Info.html">
+  <link rel="stylesheet" type="text/html" href="News.html">
+  <link rel="stylesheet" type="text/html" href="Taal.html">
+  <link rel="stylesheet" type="text/html" href="Games/Clicker/index.html">
+  <link rel="icon" type="image/x-icon" href="Images/Logo-Web.png">
+</head>
+<title>Abdelrahman - Web</title>
+<body>
+  <center>
+  <div class="navbar">
+    
+    <a href="https://abdelrahman2012.github.io/floralaan.html">Thuis</a>
+    <a href="https://abdelrahman2012.github.io/Floralaan_School.html">School</a>
+    <a href="https://abdelrahman2012.github.io/Floralaan_Proflie_A.html">Profile</a>
+    <a onclick="myFunction()">Nacht</a>
+
+    <div class="dropdown">
+    <div class="right">
+    <a class="dropbtn" >Meer
+    </a>
+    <div class="dropdown-content">
+      <a href="https://www.facebook.com/AbdelrahmanElkady2012/">Abdelrahman Profile bekijken</a>
+      <a href="https://www.logopedie-eindhoven.nl/">Logopedie</a>
+      <a href="https://abdelrahman2012.github.io/Info.html">Info</a>
+      <a href="https://abdelrahman2012.github.io/News.html">News</a>
+      <a href="https://abdelrahman2012.github.io/Taal.html">Taal</a>
+      <a onclick="location.href = 'https://abdelrahman2012.github.io/Games/Clicker/index.html'" >Clicker (Spel)</a>
+    </div>
+    </div>
+  </div>
+</div>
+ <h1></h1>
+</head>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<!-- Style looks the web nice. and easy to use-->
+<style>
+body {
+ font-family: 'Arial'; 
+ text-align: center;
+}
+
+/* Below line is used for online Google font */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+h2{
+background-color: #FEFFED;
+padding: 30px 35px;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+}
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid #ccc;
+margin-bottom: 40px;
+}
+input[type=text],input[type=password]{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid none;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+label{
+color: #464646;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+center{
+font-size:32px;
+}
+.note{
+color:red;
+}
+.valid{
+color:green;
+}
+.back{
+text-decoration: none;
+border: 1px solid rgb(0, 143, 255);
+background-color: rgb(0, 214, 255);
+padding: 3px 20px;
+border-radius: 2px;
+color: black;
+}
+input[id=username], input[id=password]{ 
+width: 40%;
+height: 5%;
+}
+input[type=button]{
+font-size: 16px;
+background: yellowgreen;
+border: 1px solid yellowgreen;
+color: #4E4D4B;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+
+</style>
+<script>
+var x = 10
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == 'UAdy2' && password == 'Hgwq2'){
+alert ("Welkom");
+window.location = "School.html"; // Redirecting to other page.
+return false;
+}if ( username == 'name' && password == 'pass'){
+alert ("Welcome Abdelrahman");
+window.location = "Abdelrahman.html"; // Redirecting to other page.
+return false;
+} else {
+  document.getElementById('Fout').innerHTML = 'Niet Goed.';
+} 
+if( attempt == 0){
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+document.getElementById('num').innerHTML = x;
+</script>
+<body>
+</head>
+<body>
+<h1 id="Fout"></h1>
+<form id="form_id" method="post" name="myform">
+
+<input type="text" name="username" id="username" placeholder="Naam :"/><br>
+
+<input type="password" name="password" id="password" placeholder="Wachtword :"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
+</body>
+</html>

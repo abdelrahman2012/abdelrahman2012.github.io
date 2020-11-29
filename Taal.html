@@ -18,7 +18,8 @@
     <a href="https://abdelrahman2012.github.io/floralaan.html">Thuis</a>
     <a href="https://abdelrahman2012.github.io/Floralaan_School.html">School</a>
     <a href="https://abdelrahman2012.github.io/Floralaan_Proflie_A.html">Profile</a>
-    <h1>Taal</h1>
+    <a onclick="myFunction()">Nacht</a>
+
     
     <div class="dropdown">
     <button class="dropbtn">Meer
@@ -33,11 +34,23 @@
     </div>
   </div>
 </div>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
  <h1>Taal</h1>
- <h2>Nu gaan we de taal les doen</h2>
+ <h2>Nu gaan we Taal+Rekenen doen</h2>
  <h1></h1>
- <h3 id="OM">Om 8:30 gaan we naar de /klas/huis/bed/</h3>
- <button type="button" class="button" onclick='document.getElementById("OM").innerHTML = "Om 8:30 gaan we naar de klas"'>Het Antwoord</button>
-<h5>deze 'url' gaat verder straks</h5>
+ <h1>INFO : als je zo iets <i>Ziet</i> dan is het van Rekenen | Als je dit ziet -> (het), (de) of (een) dan is the een lidwoord</h1>
+ <h1></h1>
+ <h3 id="OM">Om <i>half 9</i> gaan we naar de /klas/huis/bed/</h3>
+ <button type="button" class="button" onclick='document.getElementById("OM").innerHTML = "Om half 9 gaan we naar de klas"'>Het Antwoord</button>
+
+ <h3 id="1">We Snijden het Pizza in 4 /stuks/kaas/dings/</h3>
+ <button type="button" class="button" onclick='document.getElementById("1").innerHTML = "We Snijden (het) pizza in 4 stuks"'>Het Antwoord</button>
+ 
+ 
  </body>
  </html>
