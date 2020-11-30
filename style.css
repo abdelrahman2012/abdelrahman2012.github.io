@@ -1,9 +1,8 @@
 body {
-    font-size: 20.1px;   
+    font-size: 25m;   
     font-family: Permanent Marker;
-    background-color: yellowgreen;
-    color: white;
-    size: 80;
+    background-image: url('Sinterklaas.png');
+    color: black;
      }#FFFFFFFFFFFF
 
     * {
@@ -33,7 +32,7 @@ body {
     /* Style the top navigation bar */
     .navbar {
       overflow: hidden;
-      background-color: yellowgreen;
+      background-image: url('Sinterklaas.png');
       padding: 5%;
       width: auto;
       height: auto;
@@ -125,7 +124,7 @@ body {
  
 .navbar {
   overflow: hidden;
-  background-color: yellowgreen;
+  background-color: red;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -185,7 +184,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: yellowgreen;
+  background-color: red;
 }
 
 .dropdown:hover .dropdown-content {
@@ -238,7 +237,7 @@ body {
 }
 
 button {
-  background-color: yellowgreen;
+  background-color: red;
   border: none;
   font-family: Helvetica;
   font-size: 15px;
