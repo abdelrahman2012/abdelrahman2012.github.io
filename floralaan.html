@@ -1,8 +1,9 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
-     <meta name="description" content="Voor kinderen. Gemaakt door Abdelrahman (8 jar)">
+  <meta name="description" content="Voor kinderen. Gemaakt door Abdelrahman (8 jaar). VERSION 6.00">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/js" href="Ring.js">
   <link rel="stylesheet" type="text/html" href="Floralaan_Profile_A.html">
@@ -12,160 +13,348 @@
   <link rel="stylesheet" type="text/html" href="Taal.html">
   <link rel="stylesheet" type="text/html" href="Abdelrahman.html">
   <link rel="stylesheet" type="text/html" href="Login-page.html">
+  <link rel="stylesheet" type="text/html" href="Games/Brush/index.html">
   <link rel="stylesheet" type="text/html" href="Games/Clicker/index.html">
-  <link rel="icon" type="image/x-icon" href="Images/Logo-Web.png">
+  <link rel="" type="image/x-icon" href="Logo2.png">
 </head>
-<title>Abdelrahman - Web</title>
-<body>
-  <center>
-  <div class="navbar">
-    
-    <a href="https://abdelrahman2012.github.io/floralaan.html">Thuis</a>
-    <a href="https://abdelrahman2012.github.io/Floralaan_School.html">School</a>
-    <a href="https://abdelrahman2012.github.io/Floralaan_Proflie_A.html">Profile</a>
-    <a onclick="myFunction()">Nacht (NIET CLICKEN)</a>
-    
-      <a href="https://abdelrahman2012.github.io/Login-page.html">Login</a>
+<title id="Title">Abdelrahman - Web</title>
 
-    <div class="dropdown">
-    <div class="right">
-    <a class="dropbtn" >Meer
-    </a>
-    <div class="dropdown-content">
-      <a href="https://www.facebook.com/AbdelrahmanElkady2012/">Abdelrahman Profile bekijken</a>
-      <a href="https://www.logopedie-eindhoven.nl/">Logopedie</a>
-      <a href="https://abdelrahman2012.github.io/Info.html">Info</a>
-      <a href="https://abdelrahman2012.github.io/News.html">News</a>
-      <a href="https://abdelrahman2012.github.io/Taal.html">Taal</a>
-      <a onclick="location.href = 'https://abdelrahman2012.github.io/Games/Clicker/index.html'" >Clicker (Spel)</a>
+<body class="cursor">
+  <strong>
+    <div class="navbar">
+      <div class="right">
+        <a onclick="location.href = 'abdelrahman2012.github.io/floralaan'">Abdelrahman Web</a>
+        <a onclick="location.href = 'https://abdelrahman2012.github.io/floralaan'">Thuis</a>
+        <a onclick="https://sites.google.com/view/groepen4/homepage">School</a>
+        <a onclick="location.href = 'https://abdelrahman2012.github.io/Floralaan_Proflie_A'">Profile</a>
+        <a onclick="myFunction()">Nacht (NIET CLICKEN)</a>
+        <a onclick="location.href = 'https://abdelrahman2012.github.io/Login-page.html'">Login</a>
+        <div class="dropdown">
+          <a class="dropbtn" style="color: black;">Meer
+          </a>
+          <div class="dropdown-content">
+            <a onclick="location.href = 'https://www.facebook.com/AbdelrahmanElkady2012/'"><strong>Abdelrahman Profile bekijken</strong></a>
+            <a onclick="location.href = 'https://www.logopedie-eindhoven.nl/'"><strong>Logopedie</strong></a>
+            <a onclick="location.href = 'https://abdelrahman2012.github.io/Info'"><strong>Info</strong></a>
+            <a onclick="location.href = 'https://abdelrahman2012.github.io/News'"><strong>News</strong></a>
+            <a onclick="location.href = 'https://abdelrahman2012.github.io/Taal'"><strong>Taal</strong></a>
+            <a onclick="location.href = 'https://abdelrahman2012.github.io/Games/Clicker/index.html'"><strong>Clicker (Spel)</strong></a>
+            <a onclick="location.href = 'https://abdelrahman2012.github.io/Games/Brush/index.html'"><strong>Tekenen</strong></a>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-    
-  </div>
-</div>
- <h1></h1>
-</head>
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
-<!-- Style looks the web nice. and easy to use-->
-<style>
-body {
- font-family: 'Arial'; 
- font-size: 25px;
-}
+    <h1></h1>
+	 <script src="main.js"></script>
+    <script>
+      try {
+        setTimeout(function changeTitle(){document.getElementById("Title").innerHTML = "Abdelrahman | Web";},4000);
+
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
 
 
-.math {
-  column-count: 3;
-  column-gap: 40px;
-  column-rule-style: solid;
-  padding: 5%;
-  width: 90%;
-  height: auto;
-  font-size: 23px;
-  border-radius: 35px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
+        function math() {
+          y = document.getElementById('Math3').innerHTML = Math.floor(Math.random() * 100); // The 1st random number.
+          x = document.getElementById('Math2').innerHTML = Math.floor(Math.random() * 100); // The 2nd random number.
+          document.getElementById('answer').innerHTML = '<button onclick="answer()">Antwoord</button>'; // Makes the answer ??? becase you con't see the answer
+        }
 
-</style>
-<body>
-<p id="num"></p>
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-       
-      <img src="Fhoto2.jpg" alt="" style="width:300px;height:290px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Ik ben Abdelrahman</h2>
-      <p>En ik heb deze Website gemaakt zonder hulp maar een beetje hulp😁</p>
+        function math10() {
+          y = document.getElementById('Math3').innerHTML = Math.floor(Math.random() * input_number); // The 1st random number.
+          x = document.getElementById('Math2').innerHTML = Math.floor(Math.random() * input_number); // The 2nd random number.
+          document.getElementById('answer').innerHTML = '<button onclick="answer()">Antwoord</button>'; // Makes the answer ??? becase you con't see the answer
+        }
 
-    </div>
-  </div>
-</div>
-      <h1></h1>
-      <font color="White" face="Verdana, Geneva, sans-serif" size="+100">Welkom</font>
-  </p>
-  <p>
-  </p>
+        function answer() {
+          document.getElementById('answer').innerHTML = x + y; // The answer will popup 
+        }
 
-</head>
-<body>
+        function math3() {
+          y2 = document.getElementById('Math4').innerHTML = Math.floor(Math.random() * 10);
+          x3 = document.getElementById('Math5').innerHTML = Math.floor(Math.random() * 10);
+          document.getElementById('answer2').innerHTML = '<button onclick="answer2()">Antwoord</button>';
+        }
 
-<center>
-<button class="button" onclick="location.href = 'https://www.facebook.com/profile.php?id=1318211501671887&ref=content_filter'">Facebook Floralaan</button>
-<button class="button" onclick="location.href = 'https://www.bs-floralaan.nl/'">Naar de Floralaan Website</button>
-<button class="button" onclick="location.href = 'https://www.zwijsen.nl/lesmethoden/taal-beeld-spelling-beeld'">Naar taal in bleed</button>
-<button class="button" onclick="https://www.google.nl/maps/place/Bs+Floralaan/@51.4161931,5.4897548,19.36z/data=!4m5!3m4!1s0x47c6d84fbc1754d3:0xa92cd6bd3750ea69!8m2!3d51.4164891!4d5.4904872">Floralaan Plaats</button>
+        function TM() {
+          y = document.getElementById('Math2').innerHTML = Math.floor(Math.random() * 1000);
+          x = document.getElementById('Math3').innerHTML = Math.floor(Math.random() * 1000);
+          document.getElementById('answer').innerHTML = '<button onclick="answer()">Antwoord</button>';
+        }
+        var list = ["G", 'H', "2"];
 
+        function TM2() {
+          y2 = document.getElementById('Math4').innerHTML = Math.floor(Math.random() * 10);
+          x3 = document.getElementById('Math5').innerHTML = Math.floor(Math.random() * 20);
+          document.getElementById('answer2').innerHTML = '<button onclick="answer2()">Antwoord</button>';
+        }
 
-  
-    <p>Goed de volgende dat we gaan doen is <strong>(Rekenen)</strong></p>
-  <p>Les 2 <strong>Rekenen</strong></p>
+        function answer2() {
+          document.getElementById('answer2').innerHTML = x3 * y2;
+        }
 
-  <div class="math">
-  <h5>Hoe zie je het antword? je clicked gewoon op de som</h5>
-       <p id="demo" onclick='document.getElementById("demo").innerHTML = "6+7= 13"'>6+7= </p>
-         <!-- What is document.getElementById(NameElement).innerHTML = 'Thanks for clicking me'  if you clicked the button turns the message in the 'slinge kotes' -->
-      <p id="demo1" onclick='document.getElementById("demo1").innerHTML = "7+6= 13"'>7+6= </p>
-      
-      <p id="demo2" onclick='document.getElementById("demo2").innerHTML = "60+7= 67"'>60+7=</p>
+        function JS() {
+          var nieuw = '<strong>Bij Rekenen</strong> zijn de keer sommen en de plussommen nieuw. Wat ze doen. Ze pakken een getal uit 1 tot 100 of 10.<br> <strong>Bij taal + spelling</strong> zijn er videos die over klankgroepen en lettergrepen.<br><strong style="color: blue; background-color:white; border-radius: 10px;"> wil je meer dingen in de website vraag dan aan Abdelrahman.</strong>';
+          document.getElementById('Nieuw').innerHTML = nieuw;
+        }
+      }
+      catch (err) {
+        document.getElementById('Error').innerHTML = 'Oeps! Er is een Foutje! kan je het aan Abdelrahman vraagen omdat dan weet ik dat er een Foutje zit.'
+      }
 
-      <p id="demo3" onclick='document.getElementById("demo3").innerHTML = "9-8= 1"'>9-8=</p>
+      function foo(obj) {
+        obj.disabled = true;
+        setTimeout(function() {
+          obj.disabled = false;
+        }, 2000);
+      }
+      var index = 0;
 
-      <p id="demo4" onclick='document.getElementById("demo4").innerHTML = "7-5= 2"'>7-5=</p>
+      function comment() {
+        // Adds to index + 1
+        alert(INPUT);
+        index = index + 1
+        var INPUT = document.getElementById('Comment');
+        var List_Of_Comments = ['Hello World'];
+        Comment = Comment + List_Of_Comments
+        if (Comments == 101) {
+          console.log('COMMENTS 100 NEW RECORE');
+        }
+        docment.getELementById('Comments').innerHTML = List_Of_Comments;
+      }
+      // document.body.appendChild(ab);
+      function School() {
+        document.getElementById("Homepage").innerHTML = "<p></p>";
+      }
+      var size_file = 0;
+      let Check_fille = 2;
+      var Calendar = new Date();
+      var Day = Calendar.getDate();
+      var Month = Calendar.getMonth();
+      if (Day == Day && Month == Month) {
+        // Checks of it's 24/12/2020
+        if (Month == 2) {
+          document.body.style.backgroundImage = "url('b3.png')";
+        }
+        //Checks of it's 25/11/2020
+        if (Month == 0) {
+          document.body.style.backgroundImage = "url('b3.png')";
+        }
+        if (Month == 11) {
+          document.body.style.backgroundImage = "url('b3.png')";
+        }
+        if (Day == 31 && Month == 11) {
+          document.body.style.backgroundImage = "url('b4.png')";
+        }
+        if (Day == 1 && Month == 0) {
+          document.body.style.backgroundImage = "url('b4.png')";
+        }
 
-      <p id="demo5" onclick='document.getElementById("demo5").innerHTML = "78-8= 70"'>78-8=</p>
+        else {
+          document.body.style.backgroundColor = "lightblue";
+          document.body.classList.toggle("p2");
+          var int = "URL_GET";
+          var as = "";
+          var float = "GET_URL";
+          ///////////////////////////////////////////
+          // Checks of it's nothing in the calendar//
+          ///////////////////////////////////////////
+        }
+      }
 
-      <p id="demo6" onclick='document.getElementById("demo6").innerHTML = "9-3= 6"'>9-3= </p>
+      function Myfunction() {
+        var radio3 = document.getElementById("radio2");
+        radio3.checked = true;
+        // Stops all avitce
+      }
+    </script>
+    <style>
+      img {
+        cursor: url("http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur"), auto, wait, all, alias, s-resize, pointer;
+      }
 
-      <p id="demo7" onclick='document.getElementById("demo7").innerHTML = "20-3= 17"'>20-3= </p>
+      .p2 {
+        color: white;
+      }
 
-      <p id="demo8" onclick='document.getElementById("demo8").innerHTML = "BOUNS 30+54= 84"'>BOUNS 30+54=</p>
+      p,
+      button
+      {
+        font-size: 23px;
+        height: fit-content;
+        width: fit-content;
+        color: black;
+        background-color: lightblue;
+        border-radius: 35px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      }
 
-      <p id="demo9" onclick='document.getElementById("demo9").innerHTML = "10+101= 121"'>10+101=</p>
+      .math,
+      math {
+        /* The new shadowbox, So lt's say Hello to "Math" */
+        font-size: 23px;
+        height: auto;
+        width: 70%;
+        border-radius: 35px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      }
 
-      <p id="demo10" onclick='document.getElementById("demo10").innerHTML = "BOUNS 3x3= 9"'>BOUNS 3x3=</p>
+      tooltip,
+      .tooltip {
+        border: 5px solid yellow;
+        background-color: yellow;
+      }
 
-      <p id="demo11" onclick='document.getElementById("demo11").innerHTML = "10+50= 60"'>10+50=</p>
+      iframe {
+        border-radius: 80px;
+        border: 50px double blue;
+        border-top: 50px double red;
+        border-right: 50px double orange;
+        border-bottom: 50px double yellow;
+        width: auto;
+        height: auto;
+      }
 
-      <p id="demo12" onclick='document.getElementById("demo12").innerHTML = "BOUNS 90+29= 119"'>BOUNS 90+29=</p>
+      /*   Little break please   */
+      .line {
+        border: 5px solid black;
+        width: 350px;
+        height: 7px;
+        border-radius: 20px;
+      }
 
-      
-     <h4>Nu Gaan we begenen met Keer/Tafel sommen</h4>  
-     
-     <p id="KeerSom" onclick='document.getElementById("KeerSom").innerHTML = "8x7= 56"'>8x7= </p>
-     
-     <p id="KeerSom2" onclick='document.getElementById("KeerSom2").innerHTML = "10x4= 40"'>10x4= </p>
+      .line2 {
+        height: 50px;
+        background-color: none;
+        width: 15px;
+        border: 5px solid black;
+        border-radius: 20px;
+        border: 5px double blue;
+        border-top: 5px double red;
+        border-right: 5px double orange;
+        border-bottom: 5px double yellow;
+      }
 
-     <p id="KeerSom3" onclick='document.getElementById("KeerSom3").innerHTML = "1x4= 4"'>1x4= </p>
+      h1 {
+        font-size: 50px;
+      }
 
-     <p id="KeerSom4" onclick='document.getElementById("KeerSom4").innerHTML = "4x4= 16"'>4x4= </p>
-     
-     <p id="KeerSom5" onclick='document.getElementById("KeerSom5").innerHTML = "1x7= 7"'>1x7= </p>
- </div>
+      .cursor {
+        cursor: url("http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur"), auto, wait, all, alias, s-resize, pointer;
+		 }
 
-      
-    </p>
-    <p><strong>de volgende dat we is kleuren</strong></p>
-<h3>Wat gaan we kleuren? Sinterklaas en Piet!</h3>
-<!-- Links Don't Copy-->
-<button class="button2" onclick="location.href = 'chrome://dino"></button>
-<button class="button" style="font-size:19;" onclick="location.href = 'https://www.leukvoorkids.nl/kleurplaten/sinterklaas-kleurplaten/'">Alle Sinterklaas en Pieten en nog veel meer (We hebeen wel 98 kleurplaten)</button>
+      marquee {
+        font-size: 23px;
+        height: fit-content;
+        width: fit-content;
+        color: black;
+        background-color: lightblue;
+        border: 10px solid black;
+        border-radius: 35px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 1.19), 0 6px 6px rgba(0, 0, 0, 0.23)0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      }
 
-<p id="demoPiant">Is het klaar</p>
+      small {
+        font-size: 10px;
+        margin-top: 30px;
+      }
 
-<button class="button" onclick='document.getElementById("demoPiant").innerHTML = "Ok we gaan naar de volgende les"'>Ja</button>
+      .down {
+        background-color: darkgray;
+        height: fit-content;
+        width: fit-content;
+      }
 
-<button class="button" onclick='document.getElementById("demoPiant").innerHTML = "Um Je weet wel wat je moet doen O_o o_O"'>Nee</button>
+      /* End Of <style>. Back to HTML*/
+    </style>
+    <center>
+      <marquee tooltip="Gek he!">https://abdelrahman2012.github.io/floralaan</marquee>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="Fhoto2.jpg" alt="" onclick="alert('Ik ben Abdelrahman');" style="width:300px;height:290px" tooltip="Hello">
+          </div>
+          <div onclick="alert('Ik ben Abdelrahman');" class="flip-box-back">
+            <h2 onclick="alert('Ik ben Abdelrahman');">Ik ben Abdelrahman</h2>
+            <p style="color:white;" onclick="alert('Ik ben Abdelrahman');">En ik heb deze Website gemaakt zonder hulp maar een beetje hulp😁</p>
+          </div>
+        </div>
+      </div>
+      <h1 id="Error"></h1>
+      <p>
+        <font color="White" face="Verdana, Geneva, sans-serif" size="+100" tooltip="Welcome in Engles">Welkom</font>
+      </p><br><br>
+      <button class="button" onclick="location.href = 'https://www.facebook.com/profile.php?id=1318211501671887&ref=content_filter'">Profile Facebook Floralaan</button>
+      <button class="button" onclick="location.href = 'https://www.bs-floralaan.nl/'">Naar de Floralaan Website</button>
+      <button class="button" onclick="location.href = 'https://www.zwijsen.nl/lesmethoden/taal-beeld-spelling-beeld'">Naar taal in bleed</button>
+      <button class="button" onclick="location.href = 'https://www.google.nl/maps/place/Bs+Floralaan/@51.4161931,5.4897548,19.36z/data=!4m5!3m4!1s0x47c6d84fbc1754d3:0xa92cd6bd3750ea69!8m2!3d51.4164891!4d5.4904872'">Floralaan Plaats</button>
+		
+		<!-- Math -->
+		<div class="math">
+		<br>
+			<p>Plussommen zijn tot 200 <br>en<br> de Keersommen zijn tot 100.<br> Goed de volgende dat we gaan doen is <strong>(Rekenen)</strong></p>
+			<p>Les 2 <strong>Rekenen</strong></p><!-- Hello World in het engels -->
+			<div class="math">
+			  <h4>Plussommen</h4>
+			  <h1 id="Math2">
+				 <h1>+</h1>
+				 <h1 id="Math3"></h1>
+				 <h1>=</h1>
+			  </h1><h1 id="answer"></h1>
+			  <button onclick="math()">Nieuwe Som</button><button onclick="TM()">Antwoorden T/M 2000</button>
+			  <div class="space"></div>
+			</div>
+			<div class="math">
+			  <h4>Keersommen</h4>
+			  <p> <strong>TIP</strong> : als je het moelijk vind draai de som dan is het niet meer moelijk!</p>
+			  <h1 id="Math4">
+				 <h1>x</h1>
+				 <h1 id="Math5"></h1>
+			  </h1>
+			  <h1>=</h1>
+			  <h1 id="answer2"></h1>
+			  <button onclick="math3()">Nieuwe Som</button><button onclick="TM2()">Antwoorden T/M 200</button>
+			</div><br>
+		</div>
+		<!-- Song -->
+		<br>
+		<div class="math">
 
-
-</center>
-
+			 <a></a>
+			 <p><strong>de volgende dat we gaan doen is Muizek</strong></p>
+			 <p>En toen?<br> Kinderen Voor Kinderen kinderboekenweek (2020)<br> kijk in de TV hier onder
+			 </p><iframe src="kinderenvoorkinderen.mp4">
+			 </iframe>
+			 <div class="line2"></div>
+			 <div class="line"></div>
+			 <h1>Of</h1>
+			 <p>Ga de Muizek van School</p>
+			 <button onclick="location.href = 'https://sites.google.com/view/groepen4/Muizek'">Click Hier</button>
+			 <br>
+		 </div>
+		 <br><br>
+		 
+		 <!-- Coloring -->
+		 
+		 <div class="math">
+			 <p>De volengde dat we gaan is <strong>(Kleuren)</strong></p>
+			 <button onclick="alert('Nog niet klaar');">De sneeuwwlok kleurn</button><br>
+		</div>
+		<br>		
+		
+		<!-- Bottom of the page -->
+		
+      <small style="color:black;">Je gebruikt version 7.00</small>
+    </center>
+  </strong>
 </body>
 
 </html>
+<!--- All by Abdelrahman --->

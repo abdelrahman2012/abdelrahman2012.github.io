@@ -1,27 +1,57 @@
 body {
     font-size: 25m;   
     font-family: Permanent Marker;
-    background-image: url('Sinterklaas.png');
+    icon: url('Logo2.png');
+	 
     color: black;
+	 cursor: url("http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur"), auto, wait, all, alias, s-resize, pointer;
+    margin: 0px;
+	 outline: none;
+    background-color: lightblue;
      }#FFFFFFFFFFFF
 
     * {
       box-sizing: border-box;
     }
-  
-  
+.backgorund {
+  background-color: blue;
+}
+.space {  
+  margin: 20px;
+}
   /* Style the body */
     body {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
     }
-  
+   
+             .math {
+            column-gap: 40px;
+            column-rule-style: solid;
+            padding: 10px;
+				height: fit-content;
+				width: fit-content;
+            color: black;
+            border-radius: 35px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+          }
+          .math2 {
+            column-gap: 40px;
+            column-rule-style: solid;
+            padding: 5%;
+            width: 79%;
+            color: black;
+            height: auto;
+            font-size: 23px;
+            border-radius: 35px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+          }
     /* Header/logo Title */
     .header {
       padding: 80px;
       text-align: center;
       background: #1abc9c;
-      color: white;
+      color: black;
     }
   
     /* Increase the font size of the heading */
@@ -32,21 +62,142 @@ body {
     /* Style the top navigation bar */
     .navbar {
       overflow: hidden;
-      background-image: url('Sinterklaas.png');
       padding: 5%;
       width: auto;
       height: auto;
+      float: center;
+      border-radius: 100px;
       font-size: 23px;
       border-radius: 35px;
       text-align: center;
       
     }
-  
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+body 				 { background:url(https://scotch.io/wp-content/uploads/2014/07/61.jpg); }
+.container 		{ 
+  font-family:'Roboto';
+  width:600px; 
+  margin:30px auto 0; 
+  display:block; 
+  background:#FFF;
+  padding:10px 50px 50px;
+}
+h2 		 { 
+  text-align:center; 
+  margin-bottom:50px; 
+}
+h2 small { 
+  font-weight:normal; 
+  color:#888; 
+  display:block; 
+}
+.footer 	{ text-align:center; }
+.footer a  { color:#53B2C8; }
+
+/* form starting stylings ------------------------------- */
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  width: 100px;
+  height: 100px;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; border-color: blue;}
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  margin-right: 100px;
+  top:10px;
+  text-align:center;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  text-align:center;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}  
     /* Style the navigation bar links */
     .navbar, a {
-      float: none;
+      float: center;
       display: block;
-      color: white;
+      color: black;
       text-align: center;
       padding: 14px 20px;
       text-decoration: none;
@@ -54,6 +205,7 @@ body {
     }
   
     /* Right-aligned link */
+	 /* A navbar but right A righted link */
     .navbar a.right {
       float: right;
     }
@@ -61,6 +213,7 @@ body {
     /* Change color on hover */
     .navbar a:hover {
       background-color: red;
+      border-radius: 50px;
       color: white;
     }
   
@@ -69,6 +222,8 @@ body {
       display: -ms-flexbox;
       text-align: center;
       display: flex;
+      margin-left: 650px;
+      margin-right: auto;
       -ms-flex-wrap: wrap;
       /* IE10 */
       flex-wrap: wrap;
@@ -124,14 +279,13 @@ body {
  
 .navbar {
   overflow: hidden;
-  background-color: red;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -162,6 +316,7 @@ body {
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
+  border-radius: 5px;
   display: block;
 }
 
@@ -200,7 +355,6 @@ body {
   background-color: transparent;
   width: 300px;
   height: 290px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px;
 }
 
@@ -209,12 +363,12 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 0.90s;
   transform-style: preserve-3d;
 }
 
 .flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(890deg);
 }
 
 .flip-box-front, .flip-box-back {
@@ -228,31 +382,39 @@ body {
 .flip-box-front {
   background-color: #bbb;
   color: black;
+  border-radius: 70%;
 }
 
 .flip-box-back {
-  background-color: #555;
+  background-color: lightblue;
   color: white;
+  border-radius: 95px;
+  border: 15px double darkblue;
+  width: fit-content;
+  height: fit-content;
   transform: rotateY(180deg);
 }
 
 button {
-  background-color: red;
   border: none;
   font-family: Helvetica;
-  font-size: 15px;
-  color: white;
+  font-size: 20px;
+  color: black;
+  background-color: lightblue;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 79px;
 }
 
 .button:hover {
-  background-color: yellowgreen;
+  border-radius: 79px;
+  width: auto;
+  height: auto;
+  border: 2.5px solid black;
 }
 /* Easteregg is like sceret text color  */
 .button2 {
@@ -379,3 +541,19 @@ body {
 .dark-mode, .dark-mode .button, .dark-mode body, .dark-mode .navbar{
    background-color: #676767;
 }
+
+      p,
+      button,
+		li,
+      img {
+        height: fit-content;
+		  padding: 5px;
+        width: fit-content;
+        color: black;
+		  margin: 5px;
+        background-color: lightblue;
+        border-radius: 35px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      }
