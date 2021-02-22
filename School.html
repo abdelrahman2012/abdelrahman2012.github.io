@@ -19,6 +19,7 @@
   <div class="navbar">
     
     <a href="https://abdelrahman2012.github.io/floralaan">Thuis</a>
+			  <a onclick="location.href = 'https://chat-app-1.abdelrahmanelk1.repl.co/index.php'">Chat</a>
     <a href="https://sites.google.com/view/groepen4/homepage">School</a>
     <a href="https://abdelrahman2012.github.io/Floralaan_Proflie_A">Profile</a>
     <a onclick="myFunction()">Nacht (NIET CLICKEN)</a>
@@ -51,6 +52,14 @@ function myFunction() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
+if (1==1){
+	var listGames = [
+		"Clash Royle",
+		"Township",
+		"Idle Miner"
+	];
+	document.getElementById("Gamesofweek").innerHTML = ""+listGames[Math.floor(Math.random() * length.listGames)];
+}
 </script>
 <!-- Style looks the web nice. and easy to use-->
 <style>
@@ -74,6 +83,8 @@ body {
   
 <div class="math">
 <h4>Niks te doen?<br> <strong>Sneeuwwlok  kleuren? Click <h4 onclick='location.href = "https://www.leukvoorkids.nl/kleurplaten/sinterklaas-kleurplaten/"'>hier!</h4></strong></h4>
+<h4>Game Van de dag is:</h4>
+<h1 id="Gamesofweek"></h1>
 </div>
 </center>
 

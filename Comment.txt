@@ -1,0 +1,6 @@
+Name="Comment.txt"
+Comments=True
+Content= \
+"""
+Welkom op de Chat
+"""
