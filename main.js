@@ -124,6 +124,6 @@ function myFunction() {
   }
 }
 
-var kvk = document.getElementById("Kvk");
+var kvkv= document.getElementById("Kvk");
 
-kvk.pause();
+kvkv.pause();
