@@ -44,127 +44,7 @@ if (Day == Day && Month == Month) {
   }
 }
 console.log("Het is vandaag " + Day + " en het maand is " + (Month + 1));
-    let x = 10;
-    var score = 0;
-    var username_check = document.getElementById("username").value();
-    var password_check = document.getElementById("password").value();
-    function validate(username, password) {
-      try {
-        if (username == 'UAdy2' && password == 'Hgwq2') {
-          document.getElementById("Fout").innerHTML = "Welkom";
-          score = score + 1
 
-          location.href = "School.html"; // Redirecting to other page.
-          return false;
-        }
-        if (username == 'name' && password == 'pass') {
-          document.getElementById("Fout").innerHTML = "Welkom Abdelrahman";
-          score = score + 1
-          location.href = "https://abdelrahman2012.github.io/Abdelrahman.html"; // Redirecting to other page.
-          return false;
-
-        }
-        if (username == '7ef2' && password == 'Hgwq2') {
-
-          document.getElementById("Fout").innerHTML = "Welkom (Je hebt de beste kaart en je hebt de beste dingen in je profile)";
-          score = score + 1
-
-          location.href = "https://abdelrahman2012.github.io/School_beste.html"; // Redirecting to other page.
-          return false;
-        }
-        if (username == '7ef2' && password == 'Hgwq2') {
-
-          document.getElementById("Fout").innerHTML = "Welkom (Je hebt de beste kaart en je hebt de beste dingen in je profile)";
-          score = score + 1
-
-          document.cookie = "name: " + username + " password: " + password;
-          location.href = "https://abdelrahman2012.github.io/School_beste.html"; // Redirecting to other page.
-          return false;
-        } else {
-          document.getElementById('Fout').innerHTML = 'Niet Goed.';
-          setTimeout(function() { location.reload() }, 2000);
-
-          return false;
-        }
-
-        // if id + password is correct! //
-        if (username == '21346' && password == 'Siebe8') {
-
-          document.getElementById("Fout").innerHTML = "Welkom Siebe";
-          location.href = "https://abdelrahman2012.github.io/School_beste.html";
-
-          return false;
-        }
-
-        if (attempt == 0) {
-          document.getElementById("username").disabled = true;
-          document.getElementById("password").disabled = true;
-
-          document.getElementById("submit").disabled = true;
-          return false;
-        }
-      } catch (err) {
-        if (username == 'UAdy2' && password == 'Hgwq2') {
-          document.getElementById("Fout").innerHTML = "Welkom";
-          score = score + 1
-
-          location.href = "School.html"; // Redirecting to other page.
-          return false;
-        }
-        if (username == 'name' && password == 'pass') {
-          document.getElementById("Fout").innerHTML = "Welkom Abdelrahman";
-          score = score + 1
-          location.href = "https://abdelrahman2012.github.io/Abdelrahman.html"; // Redirecting to other page.
-          return false;
-
-        }
-        if (username == '7ef2' && password == 'Hgwq2') {
-
-          document.getElementById("Fout").innerHTML = "Welkom (Je hebt de beste kaart en je hebt de beste dingen in je profile)";
-          score = score + 1
-
-          location.href = "https://abdelrahman2012.github.io/School_beste.html"; // Redirecting to other page.
-          return false;
-        }
-        if (username == '7ef2' && password == 'Hgwq2') {
-
-          document.getElementById("Fout").innerHTML = "Welkom (Je hebt de beste kaart en je hebt de beste dingen in je profile)";
-          score = score + 1
-
-          document.cookie = "name: " + username + " password: " + password;
-          location.href = "https://abdelrahman2012.github.io/School_beste.html"; // Redirecting to other page.
-          return false;
-        } else {
-          document.getElementById('Fout').innerHTML = 'Niet Goed.';
-          setTimeout(function() { location.reload() }, 2000);
-
-          return false;
-        }
-
-        // if id + password is correct! //
-        if (username == '21346' && password == 'Siebe8') {
-
-          document.getElementById("Fout").innerHTML = "Welkom Siebe";
-          location.href = "https://abdelrahman2012.github.io/School_beste.html";
-
-          return false;
-        }
-
-        if (attempt == 0) {
-          document.getElementById("username").disabled = true;
-          document.getElementById("password").disabled = true;
-
-          document.getElementById("submit").disabled = true;
-          return false;
-        }
-      }
-    }
-    
-    validate(username_check, password_check);
-    
-    function Login() {
-      validate(username_check, password_check);
-    }
 
 
 function myFunction() {
@@ -244,4 +124,6 @@ function myFunction() {
   }
 }
 
-document.getElementById("Name").innerHTML = document.cookie;
+var kvk = document.getElementById("Kvk");
+
+kvk.pause();
