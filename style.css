@@ -31,7 +31,16 @@ button {
   border-color: none;
   outline: none;
 }
-
+button {
+text-align:center;
+border:2px solid #dd;
+border-radius: 3px;
+box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+transition: all 200ms ease-out;
+}
+button:hover {
+box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
 /* Style the navbar */
 #navbar {
 }
@@ -167,9 +176,9 @@ small {
 button:focus {
   font-size: 23px;
   height: fit-content;
+	box-shadow: 0 0 10px rgba(35, 173, 278, 1);
   width: fit-content;
   color: white;
-  background-color: bla;
   border-radius: 35px;
   text-align: center;
   padding: 10px;
