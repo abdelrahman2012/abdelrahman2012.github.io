@@ -41,23 +41,7 @@ button {
 button:hover {
 	box-shadow: 0 0 6px rgba(35, 173, 278, 1);
 }
-/* Style the navbar */
-#navbar {
-}
 
-/* Page content */
-.content {
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 0px;
-}
 
 .p2 {
   color: white;
@@ -92,7 +76,6 @@ button {
 }
 
 button:hover {
-	padding: 20px;
 	/* Welcome */
 }
 
@@ -181,7 +164,6 @@ button:focus {
   color: white;
   border-radius: 35px;
   text-align: center;
-  padding: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
