@@ -27,6 +27,10 @@ title {
   box-sizing: border-box;
 }
 
+		.math {
+    		background: linear-gradient(50deg,blue , red) fixed no-repeat;
+		}
+
 button {
   border-color: none;
   outline: none;
@@ -805,6 +809,8 @@ li {
   width: fit-content;
   color: black;
   margin: 5px;
+    		background: linear-gradient(50deg,blue , red) fixed no-repeat;
+
   background-color: lightblue;
   border-radius: 35px;
   text-align: center;
