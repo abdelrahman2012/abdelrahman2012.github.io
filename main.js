@@ -3,13 +3,14 @@
 // Wait an sec
 var size_file = 0;
 let Check_fille = 2;
+const String = 1020; 
 var Calendar = new Date();
 var Day = Calendar.getDate();
 var Month = Calendar.getMonth();
 var Year = Calendar.getYear();
 if (Day == Day && Month == Month) {
   if (Month == 2) {
-    document.body.style.backgroundImage = "url('Images/b3.png')";
+    document.body.style.background = "greenyellow";
   }
 	
   if (Month == 1) {
@@ -75,6 +76,16 @@ function math3() {
   document.getElementById('answer2').innerHTML = '<button onclick="answer2()">Antwoord</button>';
 }
 
+function math4() {
+  y10 = document.getElementById('Math6').innerHTML = Math.floor(Math.random() * 100);
+  x10 = document.getElementById('Math7').innerHTML = Math.floor(Math.random() * 10);
+  document.getElementById('answer4').innerHTML = '<button onclick="answer6()">Antwoord</button>';
+}
+
+function answer6(){
+	document.getElementById("answer4").innerHTML = y10 / x10;
+}
+
 function TM() {
   y = document.getElementById('Math2').innerHTML = Math.floor(Math.random() * 1000);
   x = document.getElementById('Math3').innerHTML = Math.floor(Math.random() * 1000);
@@ -103,7 +114,7 @@ function checkCookie(){
     }
   }
 }
-
+checkCookie()
 // alert(document.cookie)
 
 // When the user scrolls the page, execute myFunction
