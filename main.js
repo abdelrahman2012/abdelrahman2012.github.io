@@ -114,6 +114,18 @@ function checkCookie(){
     }
   }
 }
+
+var x = 0;
+function changefont(){
+	list_font = ["Roboto","Arial", "Google sans","Comic sans MS", "Comfortaa", "Lora", "RobotoMono", "Times New Roman"];
+	body = document.getElementById("body");
+	body.style.fontFamily = list_font[x];
+	x = x + 1;
+	if (x == 5){
+		x = 0;
+	}
+}
+
 checkCookie()
 // alert(document.cookie)
 

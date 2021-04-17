@@ -6,7 +6,6 @@
 
 body {
   font-size: 25m;
-  font-family: Permanent Marker;
   height: 100%;
   width: 100%;
   icon: url('Logo2.png');
@@ -52,20 +51,7 @@ button:hover {
   color: white;
 }
 
-.bodyWithoutBg {
-  font-size: 25m;
-  font-family: var(--fontFamily);
-  height: 100%;
-  width: 100%;
-  icon: url('Logo2.png');
-  /* Just an Break!! */
-  color: var(--text-color);
-  margin: 0px;
-  /* display: flex; */
-  border-color: none;
-  outline: none;
-  background-color: var(--background-color);
-}
+
 
 p,
 button {
@@ -184,11 +170,6 @@ button:focus {
 }
 
 
-/* Style the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
 
 .math {
   column-gap: 40px;
@@ -586,9 +567,6 @@ a {
   text-decoration: right;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 .flip-box {
   background-color: transparent;
@@ -668,10 +646,6 @@ button {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 /* The grid: Three equal columns that floats next to each other */
 .column {
@@ -704,9 +678,6 @@ body {
   cursor: pointer;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-}
 
 .sidenav {
   height: 100%;
@@ -839,10 +810,6 @@ Atag {
   height: 50%;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 /*!
  * Bootstrap v5.0.0-alpha2 (https://getbootstrap.com/)
@@ -885,7 +852,6 @@ body {
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
